@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Landing page editorial review jurnal Children’s Apperception Test (CAT) oleh Kelompok 1, Fakultas Psikologi Universitas Gunadarma.">
+  <meta name="theme-color" content="#111827">
+  <title>Review Jurnal CAT — Kelompok 1</title>
+  <style>
+:root {
+  --ink: #111827;
+  --ink-soft: #4b5563;
+  --paper: #f6f0e7;
+  --paper-2: #fffdfa;
+  --accent: #f05a3c;
+  --accent-2: #225b4f;
+  --line: rgba(17, 24, 39, 0.16);
+  --line-strong: rgba(17, 24, 39, 0.34);
+  --white: #ffffff;
+  --sans: "DM Sans", Arial, Helvetica, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
+  --container: min(1180px, calc(100vw - 40px));
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper-2);
+  font-family: var(--sans);
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+a { color: inherit; text-decoration: none; }
+button, summary { font: inherit; }
+svg { display: block; }
+
+.sr-only,
+.skip-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.skip-link:focus {
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip: auto;
+  left: 16px;
+  top: 16px;
+  z-index: 999;
+  padding: 10px 14px;
+  color: var(--white);
+  background: var(--ink);
+}
+
+.container { width: var(--container); margin-inline: auto; }
+.progress {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  height: 3px;
+  background: transparent;
+}
+.progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--accent);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  color: var(--ink);
+  background: rgba(255, 253, 250, 0.94);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+.header-grid {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 42px;
+  color: var(--white);
+  background: var(--ink);
+  font-weight: 700;
+  letter-spacing: .08em;
+  font-size: .82rem;
+}
+.brand-copy { display: grid; line-height: 1.25; }
+.brand-copy strong { font-size: .95rem; }
+.brand-copy small { color: var(--ink-soft); font-size: .72rem; }
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.main-nav a {
+  position: relative;
+  font-size: .88rem;
+  font-weight: 600;
+}
+.main-nav a:not(.nav-button)::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -5px;
+  height: 1px;
+  background: currentColor;
+  transition: right 180ms ease;
+}
+.main-nav a:hover::after,
+.main-nav a:focus-visible::after { right: 0; }
+.nav-button {
+  padding: 10px 14px;
+  color: var(--white);
+  background: var(--ink);
+}
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--line);
+  background: transparent;
+  cursor: pointer;
+}
+.menu-toggle span {
+  display: block;
+  width: 18px;
+  height: 1px;
+  margin: 4px auto;
+  background: var(--ink);
+}
+
+.hero {
+  padding: 72px 0 54px;
+  background:
+    linear-gradient(90deg, transparent 0 calc(50% - 1px), rgba(17,24,39,.06) calc(50% - 1px) 50%, transparent 50%),
+    var(--paper-2);
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.04fr) minmax(420px, .96fr);
+  gap: 64px;
+  align-items: center;
+}
+.kicker,
+.section-index,
+.entry-label,
+.art-label {
+  margin: 0;
+  color: var(--accent);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.kicker {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.kicker span + span::before {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background: var(--accent);
+}
+.hero h1 {
+  max-width: 760px;
+  margin: 22px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(4rem, 8vw, 7.35rem);
+  font-weight: 600;
+  line-height: .88;
+  letter-spacing: -.055em;
+}
+.hero h1 em { color: var(--accent); font-weight: 500; }
+.hero-lead {
+  max-width: 650px;
+  margin: 28px 0 0;
+  color: var(--ink-soft);
+  font-size: 1.08rem;
+  line-height: 1.8;
+}
+.hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 30px;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 18px;
+  border: 1px solid var(--ink);
+  font-weight: 700;
+  font-size: .9rem;
+  transition: color 180ms ease, background-color 180ms ease;
+}
+.button-primary { color: var(--white); background: var(--ink); }
+.button-primary:hover,
+.button-primary:focus-visible { color: var(--ink); background: transparent; }
+.text-link {
+  font-size: .9rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--ink);
+}
+.hero-facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 48px 0 0;
+  padding: 22px 0 0;
+  border-top: 1px solid var(--line-strong);
+}
+.hero-facts div {
+  padding-right: 18px;
+  border-right: 1px solid var(--line);
+}
+.hero-facts div + div { padding-left: 18px; }
+.hero-facts div:last-child { border-right: 0; }
+.hero-facts dt {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.hero-facts dd {
+  margin: 7px 0 0;
+  color: var(--ink-soft);
+  font-size: .8rem;
+}
+
+.hero-art {
+  border: 1px solid var(--line-strong);
+  background: var(--paper);
+}
+.art-label {
+  padding: 14px 16px;
+  color: var(--ink-soft);
+  border-bottom: 1px solid var(--line-strong);
+}
+.art-stage {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+}
+.art-stage::before,
+.art-stage::after {
+  content: "";
+  position: absolute;
+  background: var(--line);
+}
+.art-stage::before { left: 50%; top: 0; bottom: 0; width: 1px; }
+.art-stage::after { top: 50%; left: 0; right: 0; height: 1px; }
+.animal-drawing {
+  position: absolute;
+  inset: 30px 18px 84px;
+  width: calc(100% - 36px);
+  height: calc(100% - 114px);
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.question-card {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  width: min(300px, calc(100% - 48px));
+  padding: 18px;
+  color: var(--white);
+  background: var(--accent-2);
+}
+.question-card span {
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.question-card p {
+  margin: 8px 0 0;
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+.art-caption {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid var(--line-strong);
+}
+.art-caption span {
+  padding: 13px;
+  text-align: center;
+  font-size: .75rem;
+  font-weight: 600;
+}
+.art-caption span + span { border-left: 1px solid var(--line-strong); }
+
+.thesis {
+  color: var(--white);
+  background: var(--ink);
+}
+.thesis-grid {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 48px;
+  align-items: start;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.thesis .section-index { color: #f8a48e; }
+.thesis blockquote {
+  margin: 0;
+  max-width: 880px;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.2vw, 4.1rem);
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -.035em;
+}
+
+.section { padding: 110px 0; }
+.section-grid {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 80px;
+}
+.section-side h2,
+.section-intro h2,
+.conclusion h2 {
+  margin: 18px 0 0;
+  font-family: var(--serif);
+  font-size: clamp(2.35rem, 4.5vw, 4.6rem);
+  font-weight: 600;
+  line-height: .98;
+  letter-spacing: -.045em;
+}
+.intro-copy {
+  margin: 0;
+  max-width: 800px;
+  font-family: var(--serif);
+  font-size: clamp(1.55rem, 2.5vw, 2.2rem);
+  line-height: 1.25;
+}
+.process-line {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 48px;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+.process-line article { padding: 26px 24px 26px 0; }
+.process-line article + article {
+  padding-left: 24px;
+  border-left: 1px solid var(--line);
+}
+.process-line span,
+.synthesis-code {
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+.process-line h3,
+.synthesis-grid h3,
+.entry-main h3 {
+  margin: 10px 0 0;
+  font-family: var(--serif);
+  font-weight: 600;
+  line-height: 1.08;
+}
+.process-line h3 { font-size: 1.7rem; }
+.process-line p,
+.note-panel p,
+.section-intro > p,
+.entry-main > p,
+.entry-points span,
+.details-body p,
+.synthesis-grid p,
+.future-work li,
+.conclusion p,
+.reference-list p,
+.lecturer {
+  color: var(--ink-soft);
+}
+.process-line p { margin: 9px 0 0; font-size: .92rem; }
+.note-panel {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 18px;
+  margin-top: 28px;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.note-panel svg {
+  width: 26px;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.note-panel p { margin: 0; }
+.note-panel strong { color: var(--ink); }
+
+.articles { background: var(--paper); }
+.section-intro {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(320px, .55fr);
+  gap: 72px;
+  align-items: end;
+  margin-bottom: 54px;
+}
+.section-intro > p { margin: 0; }
+.research-entry {
+  display: grid;
+  grid-template-columns: 90px 180px minmax(0, 1fr);
+  gap: 28px;
+  padding: 44px 0;
+  border-top: 1px solid var(--line-strong);
+}
+.research-entry:last-child { border-bottom: 1px solid var(--line-strong); }
+.entry-number {
+  font-family: var(--serif);
+  font-size: 4.4rem;
+  line-height: .8;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--line-strong);
+}
+.entry-meta {
+  display: grid;
+  align-content: start;
+  gap: 4px;
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .07em;
+}
+.entry-meta span:first-child { font-weight: 700; color: var(--ink); }
+.entry-meta span:not(:first-child) { color: var(--ink-soft); }
+.entry-main h3 {
+  max-width: 820px;
+  font-size: clamp(2rem, 4vw, 4rem);
+  letter-spacing: -.035em;
+}
+.entry-main > p { max-width: 790px; margin: 18px 0 0; }
+.entry-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0;
+  margin-top: 30px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.entry-points div { padding: 20px 18px 20px 0; }
+.entry-points div + div {
+  padding-left: 18px;
+  border-left: 1px solid var(--line);
+}
+.entry-points strong,
+.entry-points span { display: block; }
+.entry-points strong { font-size: .8rem; }
+.entry-points span { margin-top: 6px; font-size: .86rem; line-height: 1.55; }
+details {
+  margin-top: 20px;
+  border-bottom: 1px solid var(--line-strong);
+}
+summary {
+  padding: 13px 0;
+  cursor: pointer;
+  list-style: none;
+  font-size: .85rem;
+  font-weight: 700;
+}
+summary::-webkit-details-marker { display: none; }
+summary::after {
+  content: "+";
+  float: right;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+details[open] summary::after { content: "−"; }
+.details-body { padding: 0 0 20px; }
+.details-body p { margin: 0; max-width: 860px; }
+
+.comparison { background: var(--paper-2); }
+.comparison-table-wrap {
+  overflow: auto;
+  border-top: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+.comparison-table {
+  width: 100%;
+  min-width: 920px;
+  border-collapse: collapse;
+  font-size: .9rem;
+}
+.comparison-table th,
+.comparison-table td {
+  padding: 18px 16px;
+  text-align: left;
+  vertical-align: top;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.comparison-table tr:last-child th,
+.comparison-table tr:last-child td { border-bottom: 0; }
+.comparison-table th:last-child,
+.comparison-table td:last-child { border-right: 0; }
+.comparison-table thead th {
+  color: var(--white);
+  background: var(--ink);
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+.comparison-table tbody th { width: 170px; font-weight: 700; }
+.comparison-table tbody tr:nth-child(even) { background: rgba(17,24,39,.025); }
+
+.synthesis { background: var(--paper); }
+.synthesis-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line-strong);
+  border-left: 1px solid var(--line-strong);
+}
+.synthesis-grid article {
+  min-height: 260px;
+  padding: 26px;
+  border-right: 1px solid var(--line-strong);
+  border-bottom: 1px solid var(--line-strong);
+}
+.synthesis-grid h3 { font-size: 2rem; }
+.synthesis-grid p { margin: 14px 0 0; }
+.future-work {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid var(--line-strong);
+}
+.future-work ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  columns: 2;
+  column-gap: 40px;
+}
+.future-work li {
+  break-inside: avoid;
+  padding: 0 0 12px 18px;
+  position: relative;
+}
+.future-work li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .72em;
+  width: 7px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.conclusion {
+  padding: 100px 0;
+  color: var(--white);
+  background: var(--accent-2);
+}
+.conclusion .section-index { color: #a8d5c7; }
+.conclusion-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 48px;
+}
+.conclusion h2 { max-width: 900px; }
+.conclusion p {
+  max-width: 820px;
+  margin: 24px 0 0;
+  color: rgba(255,255,255,.78);
+  font-size: 1.05rem;
+}
+
+.references { background: var(--paper-2); }
+.reference-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line-strong);
+}
+.reference-list li {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 18px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line-strong);
+}
+.reference-list > li > span {
+  color: var(--accent);
+  font-family: var(--serif);
+  font-size: 1.4rem;
+}
+.reference-list p { margin: 0; }
+.reference-list mark {
+  color: #8b351f;
+  background: #fde1d9;
+}
+.team-block { margin-top: 54px; }
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 28px;
+  margin-top: 14px;
+  border-top: 1px solid var(--line-strong);
+}
+.team-list span {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: .9rem;
+}
+.lecturer { margin: 18px 0 0; font-size: .86rem; }
+
+.site-footer {
+  color: var(--white);
+  background: var(--ink);
+}
+.footer-grid {
+  min-height: 110px;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 30px;
+  align-items: center;
+  font-size: .82rem;
+}
+.footer-grid p { margin: 0; }
+.footer-grid a { border-bottom: 1px solid rgba(255,255,255,.5); }
+
+@media (max-width: 1040px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-art { max-width: 760px; }
+  .section-grid { grid-template-columns: 220px minmax(0, 1fr); gap: 48px; }
+  .research-entry { grid-template-columns: 70px 150px minmax(0, 1fr); }
+}
+
+@media (max-width: 820px) {
+  :root { --container: min(100vw - 28px, 100%); }
+  .menu-toggle { display: block; }
+  .main-nav {
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    top: calc(100% + 8px);
+    display: grid;
+    gap: 0;
+    padding: 8px 16px;
+    background: var(--paper-2);
+    border: 1px solid var(--line-strong);
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+  .site-header.menu-open .main-nav {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .main-nav a { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .nav-button { margin: 8px 0; padding: 12px; text-align: center; }
+  .hero { background: var(--paper-2); }
+  .hero-grid { gap: 42px; }
+  .hero h1 { font-size: clamp(3.5rem, 16vw, 6rem); }
+  .hero-facts { grid-template-columns: 1fr; }
+  .hero-facts div,
+  .hero-facts div + div { padding: 14px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+  .thesis-grid,
+  .section-grid,
+  .conclusion-grid,
+  .section-intro,
+  .future-work { grid-template-columns: 1fr; gap: 28px; }
+  .section { padding: 82px 0; }
+  .section-side { max-width: 560px; }
+  .process-line { grid-template-columns: 1fr; }
+  .process-line article,
+  .process-line article + article { padding: 22px 0; border-left: 0; border-bottom: 1px solid var(--line); }
+  .process-line article:last-child { border-bottom: 0; }
+  .research-entry { grid-template-columns: 56px 1fr; }
+  .entry-meta { grid-column: 2; grid-row: 1; }
+  .entry-main { grid-column: 1 / -1; }
+  .entry-points { grid-template-columns: 1fr; }
+  .entry-points div,
+  .entry-points div + div { padding: 16px 0; border-left: 0; border-bottom: 1px solid var(--line); }
+  .entry-points div:last-child { border-bottom: 0; }
+  .synthesis-grid { grid-template-columns: 1fr; }
+  .synthesis-grid article { min-height: 0; }
+  .future-work ul { columns: 1; }
+  .team-list { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
+}
+
+@media (max-width: 520px) {
+  .brand-copy small { display: none; }
+  .hero { padding-top: 46px; }
+  .hero-actions { align-items: flex-start; flex-direction: column; }
+  .art-stage { min-height: 400px; }
+  .animal-drawing { inset: 16px 6px 96px; width: calc(100% - 12px); height: calc(100% - 112px); }
+  .art-caption { grid-template-columns: 1fr; }
+  .art-caption span + span { border-left: 0; border-top: 1px solid var(--line-strong); }
+  .thesis-grid { padding-top: 54px; padding-bottom: 54px; }
+  .thesis blockquote { font-size: 2.15rem; }
+  .entry-number { font-size: 3.6rem; }
+  .reference-list li { grid-template-columns: 46px 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+</style>
+  <script defer>
+const header = document.querySelector('.site-header');
+const menuButton = document.querySelector('[data-menu]');
+const menuLinks = document.querySelectorAll('.main-nav a');
+const progressBar = document.getElementById('scroll-progress');
+
+if (menuButton && header) {
+  menuButton.addEventListener('click', () => {
+    const open = header.classList.toggle('menu-open');
+    menuButton.setAttribute('aria-expanded', String(open));
+  });
+}
+
+menuLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    if (!header || !menuButton) return;
+    header.classList.remove('menu-open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  });
+});
+
+function updateProgress() {
+  if (!progressBar) return;
+  const doc = document.documentElement;
+  const max = doc.scrollHeight - doc.clientHeight;
+  const value = max > 0 ? (doc.scrollTop / max) * 100 : 0;
+  progressBar.style.width = `${value}%`;
+}
+
+window.addEventListener('scroll', updateProgress, { passive: true });
+window.addEventListener('resize', updateProgress);
+updateProgress();
+
+</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke isi</a>
+  <div class="progress" aria-hidden="true"><span id="scroll-progress"></span></div>
+
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#top" aria-label="Kembali ke bagian atas">
+        <span class="brand-mark">CAT</span>
+        <span class="brand-copy"><strong>Research Review</strong><small>Psikologi · 3PA29 · 2026</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-menu>
+        <span></span><span></span><span></span><b class="sr-only">Buka menu</b>
+      </button>
+
+      <nav id="main-nav" class="main-nav" aria-label="Navigasi utama">
+        <a href="#overview">Overview</a>
+        <a href="#articles">Jurnal</a>
+        <a href="#comparison">Perbandingan</a>
+        <a href="#synthesis">Sintesis</a>
+        <a href="#references">Referensi</a>
+        <a class="nav-button" href="assets/review-jurnal-cat.pdf" target="_blank" rel="noopener">PDF sumber</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="kicker"><span>Review jurnal</span><span>Children’s Apperception Test</span></p>
+          <h1>Membaca dunia psikologis anak melalui <em>cerita</em>.</h1>
+          <p class="hero-lead">Review kritis tiga publikasi terbaru tentang CAT—mulai dari metode interpretasi, pengaruh konteks sosial, hingga penerapannya pada kasus klinis anak.</p>
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="#articles">Jelajahi tiga jurnal</a>
+            <a class="text-link" href="#summary">Lihat kesimpulan utama <span aria-hidden="true">↘</span></a>
+          </div>
+
+          <dl class="hero-facts">
+            <div><dt>3</dt><dd>publikasi utama</dd></div>
+            <div><dt>2021–2024</dt><dd>rentang publikasi</dd></div>
+            <div><dt>3 fokus</dt><dd>metode, sosial, klinis</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art" aria-label="Ilustrasi abstrak kartu Children’s Apperception Test">
+          <div class="art-label">FIG. 01 / PROJECTIVE STORYTELLING</div>
+          <div class="art-stage">
+            <svg class="animal-drawing" viewBox="0 0 420 360" role="img" aria-label="Ilustrasi garis dua figur hewan dan sebuah rumah">
+              <path d="M85 232c-15-37 7-88 47-103 35-14 77 1 91 37 9 24 4 58-10 82-11 18-30 37-54 39-32 2-61-24-74-55Z"/>
+              <path d="M119 132 96 94l48 23M181 128l28-34 2 51M120 202c25 18 47 19 72 0M151 173c-2 2-2 5 0 7M184 173c-2 2-2 5 0 7"/>
+              <path d="M247 237c-8-29 8-65 39-77 28-11 62 2 74 32 10 26 1 58-18 76-18 17-47 25-68 12-15-9-22-25-27-43Z"/>
+              <path d="m270 164-6-35 31 26M334 163l27-29-4 43M283 223c17 13 34 13 52 0M300 194c-2 2-2 5 0 7M327 194c-2 2-2 5 0 7"/>
+              <path d="M132 293h213M236 91h102v67M221 103l66-53 67 53M279 158v-38h24v38"/>
+              <path d="M62 297c47 18 92 20 136 2M347 295c19-4 35-12 50-23"/>
+            </svg>
+            <div class="question-card">
+              <span>Prompt</span>
+              <p>“Apa yang terjadi sebelum gambar ini—dan bagaimana ceritanya berakhir?”</p>
+            </div>
+          </div>
+          <div class="art-caption">
+            <span>Stimulus ambigu</span>
+            <span>Narasi anak</span>
+            <span>Makna psikologis</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="thesis" id="summary">
+      <div class="container thesis-grid">
+        <p class="section-index">00 / TESIS UTAMA</p>
+        <blockquote>CAT masih berguna untuk mengeksplorasi pengalaman emosional anak, tetapi hasilnya harus dibaca secara sistematis, kontekstual, dan sebagai bagian dari asesmen multimetode.</blockquote>
+      </div>
+    </section>
+
+    <section class="section overview" id="overview">
+      <div class="container section-grid">
+        <div class="section-side">
+          <p class="section-index">01 / OVERVIEW</p>
+          <h2>Apa sebenarnya yang dibaca dari CAT?</h2>
+        </div>
+
+        <div class="section-content">
+          <p class="intro-copy">Children’s Apperception Test menggunakan gambar ambigu untuk memancing cerita anak. Cerita itu bukan sekadar jawaban, melainkan bahan untuk memahami bagaimana anak memersepsikan relasi, ancaman, kebutuhan, konflik, dan kemungkinan penyelesaian masalah.</p>
+
+          <div class="process-line" aria-label="Alur penggunaan CAT">
+            <article>
+              <span>01</span>
+              <h3>Stimulus</h3>
+              <p>Anak mengamati kartu bergambar yang sengaja terbuka terhadap berbagai interpretasi.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>Narasi</h3>
+              <p>Anak menceritakan kejadian, perasaan tokoh, latar belakang, dan kemungkinan akhir cerita.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>Interpretasi</h3>
+              <p>Pemeriksa menelaah tema, kebutuhan, konflik, kecemasan, relasi, dan mekanisme pertahanan.</p>
+            </article>
+          </div>
+
+          <div class="note-panel">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2.8 20h18.4L12 3Zm0 6v5m0 3v.1"/></svg>
+            <p><strong>Batas penting:</strong> CAT tidak seharusnya digunakan sebagai satu-satunya dasar diagnosis psikologis. Hasilnya perlu dikombinasikan dengan wawancara, observasi, riwayat perkembangan, informasi keluarga, dan alat asesmen lain.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section articles" id="articles">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <p class="section-index">02 / TIGA PUBLIKASI</p>
+            <h2>Tiga cara melihat fungsi CAT.</h2>
+          </div>
+          <p>Ketiganya membahas alat yang sama, tetapi menjawab pertanyaan berbeda: bagaimana menginterpretasikan, bagaimana konteks memengaruhi respons, dan bagaimana CAT bekerja dalam praktik klinis.</p>
+        </div>
+
+        <article class="research-entry research-entry-a">
+          <div class="entry-number">01</div>
+          <div class="entry-meta">
+            <span>Simon &amp; Claudon</span>
+            <span>2021</span>
+            <span>Metodologis</span>
+          </div>
+          <div class="entry-main">
+            <p class="entry-label">Artikel pertama</p>
+            <h3>Metode tiga sumbu untuk interpretasi CAT yang lebih terstruktur.</h3>
+            <p>Artikel ini menyusun panduan enam langkah melalui tiga pendekatan: analisis kuantitatif, analisis kualitatif, dan interpretasi empat dimensi psikodinamis.</p>
+            <div class="entry-points">
+              <div><strong>Kontribusi</strong><span>Memberi prosedur praktis dan referensi normatif berdasarkan usia.</span></div>
+              <div><strong>Kekuatan</strong><span>Mengurangi ketergantungan pada intuisi klinis semata.</span></div>
+              <div><strong>Keterbatasan</strong><span>Reliabilitas dan validitas metode belum diuji secara luas.</span></div>
+            </div>
+            <details>
+              <summary>Uraian lengkap</summary>
+              <div class="details-body">
+                <p>Metode ini berusaha mengintegrasikan data terukur, struktur narasi, dan dinamika psikologis. Acuan usia 3–4, 4–6, dan 6–12 tahun penting karena respons yang sama dapat memiliki makna berbeda pada tahap perkembangan berbeda. Meski bernilai praktis, satu kasus klinis belum cukup untuk menunjukkan konsistensi interpretasi lintas populasi dan budaya.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="research-entry research-entry-b">
+          <div class="entry-number">02</div>
+          <div class="entry-meta">
+            <span>Singh</span>
+            <span>2024</span>
+            <span>Sosial</span>
+          </div>
+          <div class="entry-main">
+            <p class="entry-label">Artikel kedua</p>
+            <h3>Respons CAT dalam konteks anak urban dan rural.</h3>
+            <p>Penelitian ini membandingkan kebutuhan tidak sadar serta tema psikologis pada anak dari lingkungan tempat tinggal yang berbeda.</p>
+            <div class="entry-points">
+              <div><strong>Temuan</strong><span>Perbedaan muncul pada perilaku fobik, imatur, identifikasi, dan masalah psikososial.</span></div>
+              <div><strong>Kekuatan</strong><span>Menempatkan respons anak dalam konteks keluarga, sosial, dan budaya.</span></div>
+              <div><strong>Keterbatasan</strong><span>Rincian sampel, prosedur penilaian, dan analisis belum dijelaskan memadai.</span></div>
+            </div>
+            <details>
+              <summary>Uraian lengkap</summary>
+              <div class="details-body">
+                <p>Temuan mengisyaratkan bahwa struktur keluarga, tekanan sosial, pola pengasuhan, dan lingkungan dapat memengaruhi isi cerita. Namun, perbedaan urban–rural tidak bisa langsung dianggap sebagai sebab karena faktor sosial ekonomi, pendidikan orang tua, pengalaman trauma, akses layanan, dan struktur keluarga berpotensi menjadi variabel perancu.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <article class="research-entry research-entry-c">
+          <div class="entry-number">03</div>
+          <div class="entry-meta">
+            <span>Kullur et al.</span>
+            <span>2024</span>
+            <span>Klinis</span>
+          </div>
+          <div class="entry-main">
+            <p class="entry-label">Artikel ketiga</p>
+            <h3>Konflik psikologis pada anak dengan gangguan disosiatif.</h3>
+            <p>Penelitian menggunakan CAT versi India pada 15 anak untuk mengidentifikasi pola respons proyektif, konflik, dan sumber stres.</p>
+            <div class="entry-points">
+              <div><strong>Temuan</strong><span>Konflik orang tua, masalah teman sebaya, kecemasan, kesepian, rasa bersalah, dan takut ditolak.</span></div>
+              <div><strong>Kekuatan</strong><span>Memberi contoh konkret pemanfaatan CAT dalam formulasi kasus klinis.</span></div>
+              <div><strong>Keterbatasan</strong><span>Sampel kecil, tanpa kontrol, serta reliabilitas antarpemeriksa tidak dilaporkan.</span></div>
+            </div>
+            <details>
+              <summary>Uraian lengkap</summary>
+              <div class="details-body">
+                <p>Anak diminta menyusun cerita dari 10 kartu dengan menjelaskan masa lalu, masa kini, dan kemungkinan akhir cerita. CAT membantu mengungkap stresor yang mungkin disangkal atau belum disadari keluarga, tetapi hasilnya tetap harus dikombinasikan dengan data klinis lain. Penelitian juga mencatat inkonsistensi jumlah laki-laki dan perempuan pada tabel karakteristik subjek.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section comparison" id="comparison">
+      <div class="container">
+        <div class="section-intro">
+          <div>
+            <p class="section-index">03 / PERBANDINGAN</p>
+            <h2>Perbedaan paling penting, dalam satu pandangan.</h2>
+          </div>
+          <p>Tabel ini merangkum fokus, kontribusi, dan kualitas bukti tiap artikel agar mudah dijelaskan saat presentasi.</p>
+        </div>
+
+        <div class="comparison-table-wrap" tabindex="0" role="region" aria-label="Tabel perbandingan tiga jurnal">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Aspek</th>
+                <th>Simon &amp; Claudon</th>
+                <th>Singh</th>
+                <th>Kullur et al.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>Fokus</th><td>Metode interpretasi</td><td>Konteks urban–rural</td><td>Penerapan klinis</td></tr>
+              <tr><th>Desain</th><td>Panduan metodologis + kasus</td><td>Komparatif</td><td>Deskriptif klinis</td></tr>
+              <tr><th>Kontribusi</th><td>Kerangka 3 sumbu dan 6 langkah</td><td>Menyoroti pengaruh konteks sosial</td><td>Mengungkap konflik dan stresor tersembunyi</td></tr>
+              <tr><th>Kekuatan bukti</th><td>Konseptual–praktis</td><td>Terbatas karena metode kurang jelas</td><td>Relevan secara klinis, tetapi sampel kecil</td></tr>
+              <tr><th>Masalah utama</th><td>Validitas, reliabilitas, lintas budaya</td><td>Metadata, variabel perancu, subjektivitas</td><td>Generalisasi, kontrol, konsistensi data</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section synthesis" id="synthesis">
+      <div class="container section-grid">
+        <div class="section-side">
+          <p class="section-index">04 / SINTESIS KRITIS</p>
+          <h2>Apa yang benar-benar bisa disimpulkan?</h2>
+        </div>
+
+        <div class="section-content">
+          <div class="synthesis-grid">
+            <article>
+              <span class="synthesis-code">A</span>
+              <h3>CAT tetap punya nilai eksploratif.</h3>
+              <p>Alat ini membantu memunculkan pengalaman emosional dan konflik yang sulit disampaikan anak secara langsung.</p>
+            </article>
+            <article>
+              <span class="synthesis-code">B</span>
+              <h3>Interpretasi tidak boleh lepas dari konteks.</h3>
+              <p>Usia, bahasa, budaya, keluarga, pola pengasuhan, dan situasi pemeriksaan memengaruhi cerita anak.</p>
+            </article>
+            <article>
+              <span class="synthesis-code">C</span>
+              <h3>Standarisasi masih menjadi tantangan.</h3>
+              <p>Objektivitas, reliabilitas, validitas, dan konsistensi antarpenilai masih perlu diperkuat melalui penelitian yang lebih baik.</p>
+            </article>
+            <article>
+              <span class="synthesis-code">D</span>
+              <h3>CAT paling tepat sebagai alat pelengkap.</h3>
+              <p>Nilainya paling kuat ketika digabungkan dengan wawancara, observasi, riwayat perkembangan, dan asesmen psikologis lain.</p>
+            </article>
+          </div>
+
+          <div class="future-work">
+            <p class="entry-label">Arah penelitian selanjutnya</p>
+            <ul>
+              <li>Sampel yang lebih besar dan beragam.</li>
+              <li>Kelompok pembanding yang sesuai.</li>
+              <li>Sistem penilaian yang terstandar.</li>
+              <li>Pengujian reliabilitas antarpemeriksa.</li>
+              <li>Validasi lintas budaya dan bahasa.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="conclusion">
+      <div class="container conclusion-grid">
+        <p class="section-index">05 / KESIMPULAN</p>
+        <div>
+          <h2>CAT bukan jawaban tunggal. Ia adalah pintu masuk.</h2>
+          <p>Ketiga publikasi memperlihatkan bahwa CAT masih relevan untuk memahami konflik, kebutuhan, kecemasan, dan relasi anak. Namun, interpretasinya harus terstruktur, mempertimbangkan konteks perkembangan serta budaya, dan tidak dipakai sebagai satu-satunya dasar diagnosis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section references" id="references">
+      <div class="container section-grid">
+        <div class="section-side">
+          <p class="section-index">06 / REFERENSI</p>
+          <h2>Sumber dan tim penyusun.</h2>
+        </div>
+        <div class="section-content">
+          <ol class="reference-list">
+            <li><span>01</span><p>Simon, F., &amp; Claudon, P. (2021). <em>Children’s Apperception Test: Analysis guidelines for the “3-axis method.”</em> <strong>Bulletin de psychologie, 571</strong>(1), 17–30. https://doi.org/10.3917/bupsy.571.0017</p></li>
+            <li><span>02</span><p>Singh, R. (2024). <em>Unconscious needs among children.</em> <mark>Nama jurnal, volume, nomor, halaman, dan DOI masih perlu diverifikasi dari naskah asli.</mark></p></li>
+            <li><span>03</span><p>Kullur, S. V., Koparde, V., Godbole, V., &amp; Chate, S. (2024). <em>Projective responses of children with dissociative disorder on Children’s Apperception Test (CAT).</em> <strong>Indian Journal of Mental Health, 11</strong>(2), 105–108.</p></li>
+          </ol>
+
+          <div class="team-block">
+            <p class="entry-label">Kelompok 1 · 3PA29</p>
+            <div class="team-list">
+              <span>Abidzar Ali Wicaksono · 10523006</span>
+              <span>Fadhil Dhiya Ulhaq · 10523391</span>
+              <span>Lintang Nur Fadhilah Yunus · 10523637</span>
+              <span>Muhammad Fahrezi Alviantoro · 10523726</span>
+              <span>Muhammad Fernanda · 10523729</span>
+              <span>Triyanto Arsal Zawada · 11523205</span>
+            </div>
+            <p class="lecturer">Dosen Pengampu: Kartika Aprillia, M.Psi., Psikolog · Universitas Gunadarma · 2026</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p>Review Jurnal Children’s Apperception Test</p>
+      <a href="#top">Kembali ke atas <span aria-hidden="true">↑</span></a>
+      <a href="assets/review-jurnal-cat.pdf" target="_blank" rel="noopener">Buka PDF sumber <span aria-hidden="true">↗</span></a>
+    </div>
+  </footer>
+</body>
+</html>
